@@ -7,6 +7,7 @@ body {
     background: black url('../imagens/fundo-madeira.jpg') center center no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
 }
 
 .phone-frame {
@@ -19,6 +20,7 @@ body {
 
 .phone-screen-iframe {
     position: absolute;
+    overflow: hidden;
     width: 267px;
     height: 471px;
     background: blue url('../imagens/tela-home.jpg') center center no-repeat;
@@ -34,24 +36,34 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
+    list-style-type: none;
 }
 
 .logo {
-    display: block;
-    width: 50px;
-    box-sizing: border-box;
+    width: fit-content;
     border-radius: 50%;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
-    margin-bottom: 24px;
-    transition: transform .3s, border 1s;
+    
+    margin-bottom: 20px;
+    transition-duration: 5ms;
 }
 
-.logo:hover {
+#social_media-section {
+    text-align: right;
+}
+
+#social_media-section img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px black;
+}
+
+#social_media-section img:hover {
     border: 2px solid white;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.479);
-    transform: translate(-3%, 10%);
+    box-shadow: 4px 4px 6px black;
+    transition-duration: 1s;
 }
-
 
 .access-text {
     padding: 20px;
@@ -63,5 +75,4 @@ body {
     color: white;
     font-weight: bold;
 }
-
 

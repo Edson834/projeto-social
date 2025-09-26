@@ -43,25 +43,15 @@ body {
     border-radius: 50%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
     margin-bottom: 24px;
-    transition: transform .3s, border 1s;
+    transition: transform .3s, border 0.5s;
 }
 
 .logo:hover {
     border: 2px solid white;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.479);
-    transform: translate(-3%, 10%);
+    transform: translate(-3%, -10%);
 }
 
 
-.access-text {
-    padding: 20px;
-    text-align: center;
-    background-color: red;
-}
-
-.access-link {
-    color: white;
-    font-weight: bold;
-}
 
 
